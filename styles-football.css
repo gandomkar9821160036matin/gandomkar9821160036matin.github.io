@@ -1,0 +1,77 @@
+@page {
+    margin: 2cm;
+    size: A4 portrait;
+}
+
+body.football-page {
+    font-family: 'Times New Roman', serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #e6ffe6;
+}
+
+header {
+    background-color: #006600;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.tagline {
+    font-style: italic;
+    color: #fff;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+a.link {
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #003300;
+    transition: color 0.3s ease; /* افزودن انیمیشن تغییر رنگ */
+}
+
+a.link:hover {
+    color: #002000; /* تغییر رنگ متن هنگام هوور */
+}
+
+.section {
+    margin-top: 20px;
+}
+
+h2 {
+    color: #cc0000;
+}
+
+.rules-section,
+.players-section {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.rules-section h2,
+.players-section h2 {
+    color: #cc0000;
+}
+
+.rules-section ul,
+.players-section ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+.footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    body.football-page {
+        font-size: 14px;
+    }
+}

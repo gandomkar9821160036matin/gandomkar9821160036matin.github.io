@@ -1,0 +1,67 @@
+@page {
+    margin: 2cm;
+    size: A4 portrait;
+}
+
+body.search-results-page {
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+a.link {
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #007BFF;
+    transition: color 0.3s ease; /* افزودن انیمیشن تغییر رنگ */
+}
+
+a.link:hover {
+    color: #0056b3; /* تغییر رنگ متن هنگام هوور */
+}
+
+.section {
+    margin-top: 20px;
+}
+
+h2 {
+    color: #cc0000;
+}
+
+.result-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.result-list li {
+    margin-bottom: 10px;
+}
+
+.result-list a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease; /* افزودن انیمیشن تغییر رنگ */
+}
+
+.result-list a:hover {
+    color: #cc0000; /* تغییر رنگ متن هنگام هوور */
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+}

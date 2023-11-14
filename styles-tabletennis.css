@@ -1,0 +1,81 @@
+@page {
+    margin: 2cm;
+    size: A4 portrait;
+}
+
+body.tabletennis-page {
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #cc0000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+a.link {
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #cc0000;
+    transition: color 0.3s ease; /* افزودن انیمیشن تغییر رنگ */
+}
+
+a.link:hover {
+    color: #990000; /* تغییر رنگ متن هنگام هوور */
+}
+
+.section {
+    margin-top: 20px;
+}
+
+p {
+    font-size: 16px;
+}
+
+
+.content-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.table-info,
+.equipment-info {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.table-info h2,
+.equipment-info h2 {
+    color: #cc0000;
+}
+
+.table-info ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+@layer background {
+    background-image: url('tabletennis-background.jpg');
+    background-size: cover;
+}
+
+@layer background:hover {
+    filter: brightness(70%); /* تغییر نور پس‌زمینه هنگام هوور */
+}
