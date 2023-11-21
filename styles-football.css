@@ -1,18 +1,22 @@
+/* styles-football.css */
+
 @page {
     margin: 2cm;
     size: A4 portrait;
 }
 
 body.football-page {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
     font-family: 'Times New Roman', serif;
     margin: 20px;
     padding: 20px;
-    background-color: #e6ffe6;
+    background-color: #F08080; 
 }
 
 header {
-    background-color: #006600;
-    color: #fff;
+    background-color: #800000	; 
+    color: yellow;
     text-align: center;
     padding: 10px;
 }
@@ -23,6 +27,8 @@ header {
 }
 
 nav {
+    display: flex;
+    justify-content: center;
     margin-top: 10px;
 }
 
@@ -30,15 +36,15 @@ a.link {
     display: inline-block;
     margin-right: 10px;
     text-decoration: none;
-    color: #003300;
-    transition: color 0.3s ease; /* افزودن انیمیشن تغییر رنگ */
+    color: white; /* رنگ لینک‌ها */
+    transition: color 0.3s ease;
 }
 
 a.link:hover {
-    color: #002000; /* تغییر رنگ متن هنگام هوور */
+    color: #004080; /* رنگ لینک‌ها هنگام هوور */
 }
 
-.section {
+.content-section {
     margin-top: 20px;
 }
 
@@ -48,10 +54,14 @@ h2 {
 
 .rules-section,
 .players-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
     margin-top: 20px;
     border: 1px solid #ddd;
-    padding: 10px;
     border-radius: 5px;
+    padding: 10px;
+    background-color: #fff; /* رنگ زمینه بخش‌های قوانین و بازیکنان */
 }
 
 .rules-section h2,
@@ -65,9 +75,11 @@ h2 {
     margin-left: 20px;
 }
 
-.footer {
-    margin-top: 20px;
+footer {
     text-align: center;
+    background-color: #333; /* رنگ زمینه فوتر */
+    color: #fff;
+    padding: 10px;
 }
 
 @media screen and (max-width: 600px) {
