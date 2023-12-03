@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +11,7 @@
         <h1>اطلاعات گلف</h1>
     </header>
     <nav>
-        <a href="index.html" class="link">صفحه اصلی</a>
+        <a href="index.html" class="link" id="homeLink">صفحه اصلی</a>
         <a href="football.html" class="link"> فوتبال</a>
         <a href="tabletennis.html" class="link">تنیس روی میز</a>
     </nav>
@@ -27,10 +28,20 @@
             <h2>3</h2>
             <p>سه ضربه پار ۳۸۹ یارد</p>
         </div>
-       
     </section>
     <footer>
         <p>در سالهای 1471 و 1491 به ترتیب شاه جیمز سوم و چهارم هم قانون تحریم را تمدید کردند. ولی گلف این بازی جالب به صورتهای گوناگون در اسکاتلند و کشورهای اطرافش ادامه یافت ، تا وقتیکه در سال 1744 اولین قوانین رسمی این رشته در ادینبورگ  نوشته شد و بعد از آن هر گلف باز آماتوری هم میتوانست با تکیه بر آن قوانین به انجام ورزش مورد علاقه اش بپردازد.</p>
     </footer>
+
+    <!-- افزودن کد جاوااسکریپت -->
+    <script>
+        // تابع نمایش پیام
+        function showMessage() {
+            alert('لینک "صفحه اصلی" کلیک شد!');
+        }
+
+        // اضافه کردن ایونت لیسنر به لینک
+        document.getElementById('homeLink').addEventListener('click', showMessage);
+    </script>
 </body>
 </html>

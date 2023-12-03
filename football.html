@@ -13,7 +13,7 @@
     </header>
     <nav>
         <a href="index.html" class="link">صفحه اصلی</a>
-        <a href="tabletennis.html" class="link">تنیس روی میز </a>
+        <a href="tabletennis.html" class="link">تنیس روی میز</a>
         <a href="golf.html" class="link">گلف</a>
     </nav>
     <section class="content-section">
@@ -29,14 +29,33 @@
         <div class="players-section">
             <h2>بازیکنان برجسته</h2>
             <ul>
-                <li><a href="#">کریستیانو رونالدو</a></li>
-                <li><a href="#">لیونل مسی</a></li>
-                <li><a href="#">نیمار جونیور</a></li>
+                <li><a href="#" id="ronaldoLink">کریستیانو رونالدو</a></li>
+                <li><a href="#" id="messiLink">لیونل مسی</a></li>
+                <li><a href="#" id="neymarLink">نیمار جونیور</a></li>
             </ul>
         </div>
     </section>
     <footer>
         <p></p>
     </footer>
+
+    <script>
+        function showPlayerInfo(playerName) {
+            alert('اطلاعات بازیکن: ' + playerName);
+        }
+
+        // اضافه کردن ایونت لیسنر به لینک‌ها
+        document.getElementById('ronaldoLink').addEventListener('click', function () {
+            showPlayerInfo('کریستیانو رونالدو');
+        });
+
+        document.getElementById('messiLink').addEventListener('click', function () {
+            showPlayerInfo('لیونل مسی');
+        });
+
+        document.getElementById('neymarLink').addEventListener('click', function () {
+            showPlayerInfo('نیمار جونیور');
+        });
+    </script>
 </body>
 </html>

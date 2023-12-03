@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-
+<html lang="fa">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,17 +15,34 @@
         <a href="football.html" class="link"> فوتبال</a>
         <a href="tabletennis.html" class="link">تنیس روی میز</a>
 		<a href="golf.html" class="link">گلف</a>
-
     </nav>
     <section class="search-section">
         <h2>نتایج جستجو برای "کلمه کلیدی"</h2>
         <ul class="result-list">
-            <li><a href="#">نتیجه ۱</a></li>
-            <li><a href="#">نتیجه ۲</a></li>
-            <li><a href="#">نتیجه ۳</a></li>
+            <li><a href="#" id="result1Link">نتیجه ۱</a></li>
+            <li><a href="#" id="result2Link">نتیجه ۲</a></li>
+            <li><a href="#" id="result3Link">نتیجه ۳</a></li>
         </ul>
     </section>
     <footer>
     </footer>
+
+    <script>
+        function showResultInfo(resultNumber) {
+            alert('اطلاعات نتیجه ' + resultNumber);
+        }
+
+        document.getElementById('result1Link').addEventListener('click', function () {
+            showResultInfo(1);
+        });
+
+        document.getElementById('result2Link').addEventListener('click', function () {
+            showResultInfo(2);
+        });
+
+        document.getElementById('result3Link').addEventListener('click', function () {
+            showResultInfo(3);
+        });
+    </script>
 </body>
 </html>

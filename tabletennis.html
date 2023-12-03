@@ -13,8 +13,8 @@
     <nav>
         <a href="index.html" class="link">صفحه اصلی</a>
         <a href="football.html" class="link">فوتبال</a>
-		<a href="golf.html" class="link">گلف</a>
-
+        <a href="golf.html" class="link">گلف</a>
+        <a href="#" class="link" id="dynamicLink">بخش پویا</a>
     </nav>
     <section class="content-section">
         <p>محتوای مربوط به تنیس روی میز.</p>
@@ -30,8 +30,21 @@
             <h2>تجهیزات تنیس روی میز</h2>
             <p>تجهیزات اصلی شامل راکت و توپ است.</p>
         </div>
+        <div id="dynamicSection" style="display: none;">
+            <h2>بخش پویا</h2>
+            <p>این یک بخش پویا است که به کمک جاوااسکریپت اضافه شده است.</p>
+        </div>
     </section>
     <footer>
     </footer>
+
+    <script>
+        function showDynamicSection() {
+            var dynamicSection = document.getElementById('dynamicSection');
+            dynamicSection.style.display = 'block';
+        }
+
+        document.getElementById('dynamicLink').addEventListener('click', showDynamicSection);
+    </script>
 </body>
 </html>
